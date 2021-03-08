@@ -1,6 +1,6 @@
-# goit-markup-hw-01
+# goit-markup-hw-02
 
-Домашнее задание 01 (HTML+CSS)
-start 26.02.2021
+Домашнее задание 02 (HTML+CSS)
+start 08.03.2021
 by Sergej Pjatygin
 sergej.pjatygin@gmail.com
