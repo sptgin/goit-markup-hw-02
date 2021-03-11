@@ -1,13 +1,24 @@
 :root {
   --header-background-color: #ffffff;
   --header-logo-color: #2196f3;
-  --header-text-color: #000000;
-  --header-link-color: #2196f3;
-  --header-navigation-color: #212121;
-  --header-address-color: #757575;
+  --header-logo-text-color: #000000;
+
+  --header-navigation-hover-color: #2196f3;
+  --header-navigation-text-color: #212121;
+  --header-address-hover-color: #2196f3;
+  --header-address-text-color: #757575;
 
   --main-hero-background-color: #2f303a;
   --main-hero-text-color: #ffffff;
+
+  --main-features-header-color: #212121;
+  --main-features-text-color: #757575;
+
+  --main-team-background-color: #f5f4fa;
+  --main-team-photo-background-color: #ffffff;
+  --main-team-header-color: #212121;
+  --main-team-name-color: #212121;
+  --main-team-text-color: #757575;
 
   --main-default-background-color: #e5e5e5;
   --main-team-background-color: #f5f4fa;
@@ -24,8 +35,8 @@
 
   --footer-background-color: #2f303a;
   --footer-logo-color: #2196f3;
-  --footer-text-color: #ffffff;
-  --footer-address-color: rgba(255, 255, 255, 0.6);
+  --footer-address-color: #ffffff;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -36,6 +47,81 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+/*  Секция "Верхняя линия" */
 .header {
   background-color: var(--header-background-color);
+}
+.header-logo {
+  color: var(--header-logo-text-color);
+}
+.header-logo-color {
+  color: var(--header-logo-color);
+}
+.header-navigation-list-item-link {
+  color: var(--header-navigation-text-color);
+}
+.header-navigation-list-item-link:hover {
+  color: var(--header-navigation-hover-color);
+}
+.header-address-list-item-link {
+  color: var(--header-address-text-color);
+}
+.header-address-list-item-link:hover {
+  color: var(--header-address-hover-color);
+}
+
+/* Секция "Шапка" */
+.hero-section {
+  background-color: var(--main-hero-background-color);
+}
+.hero-section-button {
+  background-color: var(--main-button-color);
+  color: var(--main-button-text-color);
+}
+h1 {
+  color: var(--main-hero-text-color);
+}
+
+/* Секция "Особенности" */
+.features-section {
+  color: var(--main-features-text-color);
+}
+.features-section h3 {
+  color: var(--main-features-header-color);
+}
+
+/* Секция "Чем мы занимаемся" */
+.functions-section {
+  color: var(--main-features-header-color);
+}
+
+/* Секция "Наша команда" */
+.team-section {
+  background-color: var(--main-team-background-color);
+}
+.team-section h2 {
+  color: var(--main-team-header-color);
+}
+.team-section h3 {
+  color: var(--main-team-name-color);
+}
+/* Секция "Подвал" */
+.footer-section {
+  background-color: var(--footer-background-color);
+}
+.footer-logo {
+  color: var(--footer-text-color);
+}
+.footer-logo-color {
+  color: var(--footer-logo-color);
+}
+.footer-section-address {
+  color: var(--footer-address-color);
+}
+.footer-section-text {
+  color: var(--footer-text-color);
 }
