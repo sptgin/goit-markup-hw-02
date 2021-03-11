@@ -14,6 +14,9 @@
   --main-button-color: #2196f3;
   --main-button-text-color: #ffffff;
 
+  --portfolio-default-background-color: #e5e5e5;
+  --portfolio-project-list-background-color: #eeeeee;
+
   --portfolio-button-color: #f5f4fa;
   --portfolio-button-text-color: #212121;
   --portfolio-button-hover-color: #2196f3;
@@ -27,4 +30,12 @@
 
 body {
   color: #212121;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  background-color: var(--header-background-color);
 }
