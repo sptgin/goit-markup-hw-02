@@ -25,8 +25,10 @@
   --main-button-color: #2196f3;
   --main-button-text-color: #ffffff;
 
-  --portfolio-default-background-color: #e5e5e5;
-  --portfolio-project-list-background-color: #eeeeee;
+  --portfolio-default-background-color: #ffffff;
+  --portfolio-project-list-background-color: #ffffff;
+  --portfolio-project-list-header-color: #212121;
+  --portfolio-project-list-text-color: #757575;
 
   --portfolio-button-color: #f5f4fa;
   --portfolio-button-text-color: #212121;
@@ -99,10 +101,15 @@ h1 {
   color: var(--main-features-header-color);
 }
 
+.functions-section-list li {
+  display: inline;
+}
+
 /* Секция "Наша команда" */
 .team-section {
   background-color: var(--main-team-background-color);
 }
+
 .team-section h2 {
   color: var(--main-team-header-color);
 }
@@ -124,4 +131,27 @@ h1 {
 }
 .footer-section-text {
   color: var(--footer-text-color);
+}
+/* Секция фильтра проектов */
+.portfolio-project-section {
+  background-color: var(--portfolio-project-list-background-color);
+  color: var(--portfolio-project-list-text-color);
+}
+.portfolio-project-section h3 {
+  color: var(--portfolio-project-list-header-color);
+}
+.portfolio-filtr-project-list li {
+  display: inline;
+}
+.portfolio-filtr-project-button {
+  background-color: var(--portfolio-button-color);
+  color: var(--portfolio-button-text-color);
+  border: none;
+  border-radius: 4px;
+}
+.portfolio-filtr-project-button:hover {
+  background-color: var(--portfolio-button-hover-color);
+  color: var(--portfolio-button-hover-text-color);
+  border: none;
+  border-radius: 4px;
 }
