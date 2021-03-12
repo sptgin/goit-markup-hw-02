@@ -1,4 +1,5 @@
 :root {
+  --body-default-text-color: #757575;
   --header-background-color: #ffffff;
   --header-logo-color: #2196f3;
   --header-logo-text-color: #000000;
@@ -41,35 +42,44 @@
   --footer-text-color: rgba(255, 255, 255, 0.6);
 }
 
+/*     font-family: 'Oleo Script', cursive;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif; */
+
 body {
-  color: #212121;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--body-default-text-color);
 }
 
 /*  Секция "Верхняя линия" */
-.header {
+.header * {
   background-color: var(--header-background-color);
+  display: inline;
 }
+.header-navigation-list li {
+  list-style: none;
+  display: inline;
+}
+
 .header-logo {
+  text-decoration: none;
   color: var(--header-logo-text-color);
 }
 .header-logo-color {
   color: var(--header-logo-color);
 }
 .header-navigation-list-item-link {
+  text-decoration: none;
   color: var(--header-navigation-text-color);
 }
 .header-navigation-list-item-link:hover {
   color: var(--header-navigation-hover-color);
 }
 .header-address-list-item-link {
+  text-decoration: none;
   color: var(--header-address-text-color);
 }
 .header-address-list-item-link:hover {
@@ -83,7 +93,18 @@ a {
 .hero-section-button {
   background-color: var(--main-button-color);
   color: var(--main-button-text-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
+.hero-section-button:hover {
+  background-color: var(--main-button-color);
+  color: var(--main-button-text-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 0px;
+}
+
 h1 {
   color: var(--main-hero-text-color);
 }
@@ -91,6 +112,9 @@ h1 {
 /* Секция "Особенности" */
 .features-section {
   color: var(--main-features-text-color);
+}
+.features-section-list {
+  list-style: none;
 }
 .features-section h3 {
   color: var(--main-features-header-color);
@@ -100,7 +124,9 @@ h1 {
 .functions-section {
   color: var(--main-features-header-color);
 }
-
+.functions-section-list {
+  list-style: none;
+}
 .functions-section-list li {
   display: inline;
 }
@@ -109,7 +135,9 @@ h1 {
 .team-section {
   background-color: var(--main-team-background-color);
 }
-
+.team-section-list {
+  list-style: none;
+}
 .team-section h2 {
   color: var(--main-team-header-color);
 }
@@ -121,15 +149,21 @@ h1 {
   background-color: var(--footer-background-color);
 }
 .footer-logo {
+  text-decoration: none;
   color: var(--footer-text-color);
 }
 .footer-logo-color {
   color: var(--footer-logo-color);
 }
+.footer-section-list {
+  list-style: none;
+}
 .footer-section-address {
+  text-decoration: none;
   color: var(--footer-address-color);
 }
 .footer-section-text {
+  text-decoration: none;
   color: var(--footer-text-color);
 }
 /* Секция фильтра проектов */
@@ -146,12 +180,17 @@ h1 {
 .portfolio-filtr-project-button {
   background-color: var(--portfolio-button-color);
   color: var(--portfolio-button-text-color);
+  cursor: pointer;
   border: none;
   border-radius: 4px;
 }
 .portfolio-filtr-project-button:hover {
   background-color: var(--portfolio-button-hover-color);
   color: var(--portfolio-button-hover-text-color);
+  cursor: pointer;
   border: none;
   border-radius: 4px;
+}
+.portfolio-project-list {
+  list-style: none;
 }
