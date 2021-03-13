@@ -90,7 +90,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.header-navigation-list-item-link:hover {
+.header-navigation-list-item-link:hover,
+.header-navigation-list-item-link:active,
+.header-navigation-list-item-link:focus {
   color: var(--header-navigation-hover-color);
 }
 .header-address-list-item-link {
@@ -101,7 +103,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.header-address-list-item-link:hover {
+.header-address-list-item-link:hover,
+.header-address-list-item-link:active,
+.header-address-list-item-link:focus {
   color: var(--header-address-hover-color);
 }
 
@@ -132,7 +136,9 @@ body {
   border: none;
   border-radius: 4px;
 }
-.hero-section-button:hover {
+.hero-section-button:hover,
+.hero-section-button:active,
+.hero-section-button:focus {
   background-color: var(--main-button-color);
   color: var(--main-button-text-color);
   border-radius: 0px;
@@ -228,6 +234,12 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.footer-section-address:hover,
+.footer-section-address:active,
+.footer-section-address:focus {
+  color: var(--header-address-hover-color);
+}
+
 .footer-section-text {
   text-decoration: none;
   color: var(--footer-text-color);
@@ -236,6 +248,12 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.footer-section-text:hover,
+.footer-section-text:active,
+.footer-section-text:focus {
+  color: var(--header-address-hover-color);
+}
+
 /* Секция фильтра проектов */
 .portfolio-project-section {
   background-color: var(--portfolio-project-list-background-color);
@@ -247,6 +265,7 @@ body {
 .portfolio-filtr-project-list li {
   display: inline;
 }
+
 .portfolio-filtr-project-button {
   background-color: var(--portfolio-button-color);
   color: var(--portfolio-button-text-color);
@@ -259,13 +278,17 @@ body {
   border: none;
   border-radius: 4px;
 }
-.portfolio-filtr-project-button:hover {
+
+.portfolio-filtr-project-button:hover,
+.portfolio-filtr-project-button:focus,
+.portfolio-filtr-project-button:active {
   background-color: var(--portfolio-button-hover-color);
   color: var(--portfolio-button-hover-text-color);
   cursor: pointer;
   border: none;
   border-radius: 4px;
 }
+/* Секция сиска проектов */
 .portfolio-project-list {
   list-style: none;
 }
