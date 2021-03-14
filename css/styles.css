@@ -55,6 +55,17 @@ body {
   color: var(--body-default-text-color);
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 /*  Секция "Верхняя линия" */
 .header * {
   background-color: var(--header-background-color);
@@ -259,8 +270,6 @@ body {
   background-color: var(--portfolio-project-list-background-color);
   color: var(--portfolio-project-list-text-color);
 }
-
-
 
 .portfolio-project-section h3 {
   color: var(--portfolio-project-list-header-color);
